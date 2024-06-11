@@ -68,6 +68,15 @@ header {
     text-decoration: underline;
 }
 
+/* Estilo para la página de inicio */
+.inicio-background {
+    background-image: url('img/inicio.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
 /* Estilos específicos para dispositivos */
 /* Punto de corte para tablet */
 @media only screen and (max-width: 768px) {
