@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tienda de Kiosco</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <!-- Agregar FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Agregar Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="script/script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Kiosco</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="productos.html"><i class="fas fa-shopping-basket"></i> Productos</a></li>
+                <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><a href="acerca.html"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contacto</h2>
+        <p>¡Contáctanos para cualquier pregunta o comentario!</p>
+        <!-- Formulario de contacto -->
+        <form id="contact-form" action="#" method="post">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            
+            <label for="reason">Motivo de contacto:</label><br>
+            <select id="reason" name="reason">
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="problema">Problema</option>
+            </select><br>
+            
+            <label>Preferencias de contacto:</label><br>
+            <input type="checkbox" id="email-preference" name="email-preference"> Email<br>
+            <input type="checkbox" id="phone-preference" name="phone-preference"> Teléfono<br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Kiosco</p>
+    </footer>
+</body>
+</html>

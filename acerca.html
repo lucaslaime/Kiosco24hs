@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - Tienda de Kiosco</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <!-- Agregar FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Agregar Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Agregar la API de Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY"></script>
+    <style>
+        /* Estilos para el contenedor del mapa */
+        #map {
+            height: 400px; /* Altura del mapa */
+            width: 100%; /* Ancho del mapa */
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Kiosco</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="productos.html"><i class="fas fa-shopping-basket"></i> Productos</a></li>
+                <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><a href="acerca.html"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="acerca-background">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos un kiosco dedicado a brindar productos de calidad y servicio excepcional a nuestros clientes.</p>
+        <p>Nuestro kiosco está abierto las 24 horas del día, los 7 días de la semana, para satisfacer las necesidades de nuestros clientes en cualquier momento del día o de la noche.</p>
+        
+        <!-- Mapa de Google Maps -->
+         <h3>Donde nos encontramos</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22098.587724484958!2d-58.42964821476331!3d-34.579506229951114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca83d2aa1521%3A0xc7a941fe0d021ba0!2sAlto%20Palermo%20Shopping!5e0!3m2!1ses-419!2sar!4v1718078481259!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Kiosco</p>
+    </footer>
+    <script src="script/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap"></script>
+</body>
+</html>
