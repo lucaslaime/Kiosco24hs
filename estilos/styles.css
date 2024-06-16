@@ -1,51 +1,20 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #b3e0f2; /* Color celeste de fondo */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
 }
 
 header {
     background-color: #333;
     color: white;
-    padding: 10px 20px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Estilos para el encabezado y la navegación utilizando Flexbox */
-header {
-    background-color: #333;
-    color: #fff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
 }
 
 .navbar {
@@ -53,6 +22,8 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
+    background-color: #1a508b; /* Color celeste oscuro para el nav */
+    padding: 10px 20px; /* Ajuste de padding para mejor separación */
 }
 
 .navbar li {
@@ -62,28 +33,142 @@ header {
 .navbar a {
     text-decoration: none;
     color: #fff;
+    transition: color 0.3s ease; /* Transición suave para el cambio de color del texto */
 }
 
 .navbar a:hover {
     text-decoration: underline;
 }
 
-/* Estilo para la página de inicio */
-.inicio-background {
-    background-image: url('img/inicio.jpg'); 
+main {
+    padding: 20px;
+}
+
+
+
+.main-index {
+    background-image: url('../img/inicio.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+    padding: 20px;
+    color: #fff; 
+
 }
 
-/* Estilos específicos para dispositivos */
-/* Punto de corte para tablet */
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px; /* Ancho máximo del contenedor de productos */
+    margin-top: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: calc(25% - 40px); /* Calculamos el ancho para que haya 4 productos por fila */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px; /* Ajuste del tamaño máximo de la imagen */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.product p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #1a508b; /* Color celeste oscuro para el footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para el encabezado y la navegación utilizando Flexbox */
+header {
+    background-color: #1a508b; /* Color celeste oscuro para el header */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para el fondo de la página de index.html*/
+.inicio-background {
+   /* background-image: url('../img/inicio.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Transición y transformación para efectos adicionales */
+h2 {
+    transform: translateY(-20px); /* Transformación para mover hacia arriba */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+h2:hover {
+    transform: translateY(-15px); /* Efecto de hover para la transformación */
+}
+
+.imagen-index img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+
+/* Estilos para Tablets */
 @media only screen and (max-width: 768px) {
-    /* Estilos específicos para tablet */
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar li {
+        margin: 0 10px;
+    }
+    main {
+        padding: 10px;
+    }
 }
 
-/* Punto de corte para celular */
+/* Estilos para Celulares */
 @media only screen and (max-width: 480px) {
-    /* Estilos específicos para celular */
+    header {
+        padding: 5px 0;
+    }
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+    .navbar li {
+        margin: 10px 0;
+    }
+    main {
+        padding: 10px;
+    }
+    .inicio-background {
+        background-size: contain; /* Ajuste de tamaño de fondo de imagen para celulares */
+    }
 }

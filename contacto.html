@@ -16,7 +16,7 @@
     <header>
         <h1>Tienda de Kiosco</h1>
         <nav>
-            <ul>
+            <ul class="navbar">
                 <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
                 <li><a href="productos.html"><i class="fas fa-shopping-basket"></i> Productos</a></li>
                 <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
@@ -31,16 +31,17 @@
         <!-- Formulario de contacto -->
         <form id="contact-form" action="#" method="post">
             <label for="name">Nombre:</label><br>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name"><br>
             
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email"><br>
             
             <label for="message">Mensaje:</label><br>
-            <textarea id="message" name="message" required></textarea><br>
+            <textarea id="message" name="message"></textarea><br>
             
             <label for="reason">Motivo de contacto:</label><br>
             <select id="reason" name="reason">
+                <option value="">Seleccione...</option>
                 <option value="consulta">Consulta</option>
                 <option value="sugerencia">Sugerencia</option>
                 <option value="problema">Problema</option>
@@ -50,9 +51,11 @@
             <input type="checkbox" id="email-preference" name="email-preference"> Email<br>
             <input type="checkbox" id="phone-preference" name="phone-preference"> Teléfono<br>
             
+            <label for="upload-image">Subir imagen:</label><br>
+            <input type="file" id="upload-image" name="upload-image"><br>
+            
             <input type="submit" value="Enviar">
         </form>
-    </main>
 
     <footer>
         <p>&copy; 2024 Tienda de Kiosco</p>
